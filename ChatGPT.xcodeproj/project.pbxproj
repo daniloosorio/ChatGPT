@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8791C2942D811CAD00C88737 /* SwiftOpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 8791C2932D811CAD00C88737 /* SwiftOpenAI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		879E4B762D7FD5DB00C5C768 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8791C2942D811CAD00C88737 /* SwiftOpenAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = ChatGPT;
 			packageProductDependencies = (
+				8791C2932D811CAD00C88737 /* SwiftOpenAI */,
 			);
 			productName = ChatGPT;
 			productReference = 879E4B652D7FD5DA00C5C768 /* ChatGPT.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 879E4B5C2D7FD5DA00C5C768;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				87B8BE2E2D81171900CC1CBD /* XCRemoteSwiftPackageReference "SwiftOpenAI" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 879E4B662D7FD5DA00C5C768 /* Products */;
 			projectDirPath = "";
@@ -558,6 +567,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		87B8BE2E2D81171900CC1CBD /* XCRemoteSwiftPackageReference "SwiftOpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftBeta/SwiftOpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8791C2932D811CAD00C88737 /* SwiftOpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87B8BE2E2D81171900CC1CBD /* XCRemoteSwiftPackageReference "SwiftOpenAI" */;
+			productName = SwiftOpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 879E4B5D2D7FD5DA00C5C768 /* Project object */;
 }
