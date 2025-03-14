@@ -64,8 +64,7 @@ final class ViewModel: ObservableObject {
     private func onReceive(newMessage: ChatCompletionsStreamDataModel) {
         let lastMessage = newMessage.choices[0]
         guard lastMessage.finishReason == nil else {
-            var size = messages.count
-            print("finish stream message size: \(size)")
+            print("finish stream message size: ")
             return
         }
         

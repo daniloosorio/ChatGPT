@@ -23,6 +23,11 @@ struct ContentView: View {
                     Image(systemName: "camera.circle.fill")
                     Text("Fotos")
                 }
+            EditView()
+                .tabItem {
+                    Image(systemName: "photo.artframe.circle.fill")
+                    Text("Editar")
+                }
         }
     }
 }
