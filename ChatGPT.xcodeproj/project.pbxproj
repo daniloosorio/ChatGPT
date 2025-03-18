@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		873AB1042D8901D700C8C2EC /* HelpersTutorialDALLE2 in Frameworks */ = {isa = PBXBuildFile; productRef = 873AB1032D8901D700C8C2EC /* HelpersTutorialDALLE2 */; };
+		873AB1072D890A4400C8C2EC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 873AB1062D890A4400C8C2EC /* Alamofire */; };
 		8791C2942D811CAD00C88737 /* SwiftOpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 8791C2932D811CAD00C88737 /* SwiftOpenAI */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				873AB1072D890A4400C8C2EC /* Alamofire in Frameworks */,
+				873AB1042D8901D700C8C2EC /* HelpersTutorialDALLE2 in Frameworks */,
 				8791C2942D811CAD00C88737 /* SwiftOpenAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,12 +81,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		873AB1022D8901D700C8C2EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		879E4B5C2D7FD5DA00C5C768 = {
 			isa = PBXGroup;
 			children = (
 				879E4B672D7FD5DA00C5C768 /* ChatGPT */,
 				879E4B782D7FD5DB00C5C768 /* ChatGPTTests */,
 				879E4B822D7FD5DB00C5C768 /* ChatGPTUITests */,
+				873AB1022D8901D700C8C2EC /* Frameworks */,
 				879E4B662D7FD5DA00C5C768 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,6 +130,8 @@
 			name = ChatGPT;
 			packageProductDependencies = (
 				8791C2932D811CAD00C88737 /* SwiftOpenAI */,
+				873AB1032D8901D700C8C2EC /* HelpersTutorialDALLE2 */,
+				873AB1062D890A4400C8C2EC /* Alamofire */,
 			);
 			productName = ChatGPT;
 			productReference = 879E4B652D7FD5DA00C5C768 /* ChatGPT.app */;
@@ -203,6 +217,8 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				87B8BE2E2D81171900CC1CBD /* XCRemoteSwiftPackageReference "SwiftOpenAI" */,
+				873AB1012D89017100C8C2EC /* XCRemoteSwiftPackageReference "HelpersTutorialDALLE2" */,
+				873AB1052D890A3300C8C2EC /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 879E4B662D7FD5DA00C5C768 /* Products */;
@@ -408,6 +424,7 @@
 				DEVELOPMENT_TEAM = Y285ZR325T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "usar camara";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Guardar foto en la galeria";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -438,6 +455,7 @@
 				DEVELOPMENT_TEAM = Y285ZR325T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "usar camara";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Guardar foto en la galeria";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -571,6 +589,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		873AB1012D89017100C8C2EC /* XCRemoteSwiftPackageReference "HelpersTutorialDALLE2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftBeta/HelpersTutorialDALLE2.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+		873AB1052D890A3300C8C2EC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
 		87B8BE2E2D81171900CC1CBD /* XCRemoteSwiftPackageReference "SwiftOpenAI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftBeta/SwiftOpenAI.git";
@@ -582,6 +616,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		873AB1032D8901D700C8C2EC /* HelpersTutorialDALLE2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 873AB1012D89017100C8C2EC /* XCRemoteSwiftPackageReference "HelpersTutorialDALLE2" */;
+			productName = HelpersTutorialDALLE2;
+		};
+		873AB1062D890A4400C8C2EC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 873AB1052D890A3300C8C2EC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		8791C2932D811CAD00C88737 /* SwiftOpenAI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 87B8BE2E2D81171900CC1CBD /* XCRemoteSwiftPackageReference "SwiftOpenAI" */;
